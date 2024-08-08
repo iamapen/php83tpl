@@ -21,8 +21,7 @@
       "Acme\\Sample\\": "src/Sample/"
     }
   },
-  "require": {
-  },
   "require-dev": {
+    "squizlabs/php_codesniffer": "^3.10.2"
   }
 }
