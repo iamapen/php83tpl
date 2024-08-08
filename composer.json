@@ -9,6 +9,8 @@
     }
   ],
   "scripts": {
+    "phpcs": "vendor/bin/phpcs --standard=phpcs-rule.xml src",
+    "phpcbf": "vendor/bin/phpcbf --standard=phpcs-rule.xml src"
   },
   "config": {
     "platform": {
