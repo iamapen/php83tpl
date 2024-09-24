@@ -1,2 +1,24 @@
 {
+  "name": "iamapen/php83prj",
+  "description": "php-8.3プロジェクトのテンプレ",
+  "type": "project",
+  "authors": [
+    {
+      "name": "iamapen",
+      "email": "iamapen@studiopoppy.com"
+    }
+  ],
+  "scripts": {
+  },
+  "config": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Acme\\Sample\\": "src/Sample/"
+    }
+  },
+  "require": {
+  },
+  "require-dev": {
+  }
 }
