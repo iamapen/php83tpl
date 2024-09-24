@@ -5,6 +5,7 @@ services:
         dockerfile: docker/php/Dockerfile
     volumes:
       - .:/app
+      - ./docker/volumes/php/etc:/usr/local/etc/php
     working_dir: /app
     extra_hosts:
       - "host.docker.internal:host-gateway"
