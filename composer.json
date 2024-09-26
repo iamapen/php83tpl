@@ -10,7 +10,11 @@
   ],
   "scripts": {
     "phpcs": "vendor/bin/phpcs --standard=phpcs-rule.xml src",
-    "phpcbf": "vendor/bin/phpcbf --standard=phpcs-rule.xml src"
+    "phpcbf": "vendor/bin/phpcbf --standard=phpcs-rule.xml src",
+    "post-install-cmd": [
+      "cp _dev/hooks/pre-commit .git/hooks/pre-commit",
+      "chmod +x .git/hooks/pre-commit"
+    ]
   },
   "config": {
     "platform": {
