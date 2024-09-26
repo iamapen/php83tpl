@@ -16,6 +16,12 @@
   <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
   <!-- ファイルが改行文字で終わっていること -->
   <rule ref="Generic.Files.EndFileNewline"/>
+  <!-- 空行は1行まで -->
+  <rule ref="Generic.WhiteSpace.EmptyLines">
+    <properties>
+      <property name="max" value="1"/>
+    </properties>
+  </rule>
 
   <!-- テストコードはキャメルケースを強制しない -->
   <rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps">
